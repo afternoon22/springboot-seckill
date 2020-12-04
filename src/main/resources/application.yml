@@ -13,8 +13,8 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
       #基本属性
       url: jdbc:mysql://127.0.0.1:3306/seckill?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&?zeroDateTimeBehavior=convertToNull
-      username: root
-      password: root
+      username: demo
+      password: maria
       #配置初始化大小/最小/最大
       initial-size: 1
       min-idle: 1
@@ -49,11 +49,11 @@ spring:
   #redis缓存
   redis:
     #redis数据库索引，默认是0
-    database: 0
+    database: 1
     #redis服务器地址，这里用本地的redis
     host: 127.0.0.1
     # Redis服务器连接密码（默认为空）
-    password:
+    password: redis3
     #redis服务器连接端口，默认是6379
     port: 6379
     # 连接超时时间（毫秒）
